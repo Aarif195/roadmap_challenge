@@ -1,0 +1,6 @@
+{
+  "id": "4",
+  "title": "The Beast Boy",
+  "date": "August 17, 2024",
+  "content": "In this post, I worked on structuring my blog data using JSON files. It’s simple yet powerful to see how we can store and render multiple articles easily without a database."
+}

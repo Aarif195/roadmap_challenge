@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Article</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <div class="edit">
+      <h2>Edit Article</h2>
+      <form method="POST" action="/update?id={{ID}}" id="editForm" class="new">
+        <input type="hidden" name="id" value="{{ID}}" />
+
+        <div class="inputDivs">
+          <p class="circle">Article Title</p>
+          <input type="text" name="title" value="{{TITLE}}" />
+        </div>
+
+        <div class="inputDivs">
+          <p class="circle">Personal Date</p>
+          <input type="text" name="date" value="{{DATE}}" />
+        </div>
+
+        <div class="inputDivs">
+          <p class="circle">Content</p>
+          <textarea name="content">{{CONTENT}}</textarea>
+        </div>
+
+        <button type="submit" class="publish-btn">Publish</button>
+      </form>
+    </div>
+
+    <script>
+      // Fill form with values inserted by server (replace placeholders)
+      document.getElementById("titleInput").value = "Article Title";
+      document.getElementById("dateInput").value = "Personal Date";
+      document.getElementById("contentInput").value = "content";
+
+      // Get article id from URL
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("articleId").value = params.get("id");
+
+      // Submit form to /update?id=...
+      document.getElementById("editForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const id = params.get("id");
+        const formData = new FormData(e.target);
+
+        fetch(`/update?id=${id}`, {
+          method: "POST",
+          body: formData,
+        }).then(() => {
+          window.location.href = "/admin";
+        });
+      });
+    </script>
+  </body>
+</html>

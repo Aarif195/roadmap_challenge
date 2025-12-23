@@ -41,6 +41,7 @@ if (command === "add") {
 
   console.log(`Task added successfully (ID: ${newTask.id})`);
 }
+
 // 'list' command
 // else if (command === "list") {
 //   if (tasks.length === 0) {

@@ -6,7 +6,8 @@
     "task": "./task.js",
     "activity": "./activity.js",
     "expense": "./expense.js",
-    "game": "./game.js"
+    "game": "./game.js",
+    "converter": "./converter.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

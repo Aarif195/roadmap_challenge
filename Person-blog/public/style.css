@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.homeCon,
+.admin,
+.edit {
+  border: 2px solid black;
+  width: 300px;
+  border-radius: 10px;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+.homeSec {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.bold {
+  color: black;
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+.gray {
+  color: gray;
+  /* text-align: center; */
+  font-weight: bold;
+}
+
+/* ARTICLE */
+.article {
+  border: 2px solid black;
+  width: 250px;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Admin */
+
+.adminCon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.perblog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admindetails {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 15px; */
+}
+
+.delEdit {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* EDIT/NEW */
+textarea {
+  height: 230px;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label,
+.circle {
+  font-weight: 600;
+  color: black;
+}
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+input::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.update-btn,
+.publish-btn {
+  width: 120px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.inputDivs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.loginForm {
+  margin-top: 5px;
+    display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.loginBtn {
+  width: 180px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+}

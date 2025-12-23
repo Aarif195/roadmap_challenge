@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Article</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <div class="edit">
+      <h2>New Article</h2>
+
+      <form action="/new" method="POST" class="form new">
+        <div class="inputDivs">
+          <label>Article Title:</label>
+          <input
+            type="text"
+            name="title"
+            placeholder="Article Title"
+            required
+          />
+        </div>
+
+        <div class="inputDivs">
+          <label>Publication Date:</label>
+          <input
+            type="text"
+            name="date"
+            placeholder="e.g. October 26, 2025"
+            required
+          />
+        </div>
+
+        <div class="inputDivs">
+          <label>Content:</label>
+          <textarea name="content" rows="8" required></textarea>
+        </div>
+
+        <button type="submit" class="publish-btn">Publish</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "id": "6",
+  "title": "Mansion and Estate",
+  "date": "July 15, 2024",
+  "content": "I started exploring how to add new posts directly from an admin form instead of creating JSON files manually. This is preparing me for the Add Article feature we’ll implement later."
+}

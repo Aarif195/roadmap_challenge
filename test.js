@@ -27,6 +27,8 @@ console.log(process.argv);
 // node task.js list in-progress
 
 
+// 2 activity  kamranahmedse
+
 // 3 EXPENSE TRACKER
 //  expense add --description "Lunch" --amount 20
 //  expense add --description "Groceries" --amount 50 --category "Food"
@@ -41,3 +43,4 @@ console.log(process.argv);
 
 
 // 4 number-guessing-game
+// node game.js
