@@ -20,7 +20,7 @@
   "Projects",
   "Beginner"
 ],
-  "author": "",
+  "author": "Abdulazeez",
   "license": "ISC",
 "description": "A collection of 12 beginner backend projects covering CLI apps, web apps, and RESTful APIs. Includes CRUD operations, JWT authentication, MongoDB integration, and API consumption from TMDB, GitHub, and Weather services. Designed to teach fundamental backend development skills using Node.js and Express."
 }
