@@ -1,19 +1,26 @@
 {
-  "name": "task-tracker-cli",
+  "name": "Roadmap Challenge",
   "version": "1.0.0",
   "main": "task.js",
-  "bin": {
-    "task": "./task.js",
-    "activity": "./activity.js",
-    "expense": "./expense.js",
-    "game": "./game.js",
-    "converter": "./converter.js"
-  },
+ 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+  "backend",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "REST API",
+  "CLI",
+  "CRUD",
+  "JWT",
+  "Authentication",
+  "API Consumption",
+  "Projects",
+  "Beginner"
+],
   "author": "",
   "license": "ISC",
-  "description": ""
+"description": "A collection of 12 beginner backend projects covering CLI apps, web apps, and RESTful APIs. Includes CRUD operations, JWT authentication, MongoDB integration, and API consumption from TMDB, GitHub, and Weather services. Designed to teach fundamental backend development skills using Node.js and Express."
 }
