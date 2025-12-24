@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body>
+    <form class="firstCon">
+      <div>
+        <h1>Unit Converter</h1>
+
+        <div class="convert">
+          <p class="color-blue" data-type="length">Length</p>
+          <p data-type="weight">Weight</p>
+          <p data-type="temperature">Temperature</p>
+        </div>
+
+        <div class="labelscon">
+          <div class="indiv">
+            <label class="convert-label">Enter the Length to Convert</label>
+            <input type="number" id="valueInput" />
+          </div>
+
+          <div class="indiv">
+            <label>Unit to Convert from</label>
+            <select id="fromUnit"></select>
+          </div>
+          <div class="indiv">
+            <label>Unit to Convert to</label>
+            <select id="toUnit"></select>
+          </div>
+
+          <button type="button" id="convertBtn">Convert</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="secondCon">
+      <div>
+        <h1>Unit Converter</h1>
+
+        <div class="labelscon">
+          <div class="result">
+            <p>Result of your calculation</p>
+            <p id="resultText">--</p>
+          </div>
+
+          <button type="button" id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../public/script.js"></script>
+  </body>
+</html>
